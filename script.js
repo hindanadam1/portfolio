@@ -17,6 +17,33 @@ setTimeout(typing, 70);
 
 typing();
 
+const navToggle = document.querySelector(".nav-toggle");
+const siteNav = document.querySelector(".site-nav");
+
+if(navToggle && siteNav){
+navToggle.addEventListener("click", () => {
+const open = siteNav.classList.toggle("is-open");
+navToggle.classList.toggle("is-open", open);
+navToggle.setAttribute("aria-expanded", String(open));
+});
+
+siteNav.querySelectorAll("a").forEach((link) => {
+link.addEventListener("click", () => {
+siteNav.classList.remove("is-open");
+navToggle.classList.remove("is-open");
+navToggle.setAttribute("aria-expanded", "false");
+});
+});
+
+window.addEventListener("resize", () => {
+if(window.innerWidth > 768){
+siteNav.classList.remove("is-open");
+navToggle.classList.remove("is-open");
+navToggle.setAttribute("aria-expanded", "false");
+}
+});
+}
+
 const revealSelector = [
 ".about-hero-card",
 ".about-panel",
