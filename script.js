@@ -1,4 +1,4 @@
-const text = "Developpeuse Full Stack";
+const text = "Full Stack";
 
 let i = 0;
 const typingTarget = document.querySelector(".typing");

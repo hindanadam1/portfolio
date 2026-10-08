@@ -396,6 +396,13 @@ font-weight:600;
 color:#ffffff;
 }
 
+.about-summary-card p{
+color:#cfcfcf;
+font-size:14px;
+line-height:1.6;
+margin-top:10px;
+}
+
 .about-summary-grid{
 display:grid;
 grid-template-columns:repeat(2, minmax(0, 1fr));
