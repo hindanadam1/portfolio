@@ -248,8 +248,18 @@ body.skills-page {
   border-bottom: 1px solid var(--skills-border);
 }
 
-.skill-panel {
+.skills-column {
+  display: flex;
   min-width: 0;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.skill-panel {
+  display: block;
+  width: auto;
+  min-width: 0;
+  margin: 0;
   padding: 21px 21px 16px;
   border: 1px solid var(--skills-border);
   background: linear-gradient(145deg, rgba(21, 16, 18, 0.84), rgba(10, 9, 10, 0.96));
@@ -335,18 +345,29 @@ body.skills-page {
   object-fit: contain;
 }
 
-.skill-tile--mark { gap: 7px; }
-.skill-mark {
-  display: grid;
+.skill-logo {
+  display: block;
   width: 34px;
   height: 34px;
-  place-items: center;
-  border: 1px solid rgba(165, 42, 58, 0.65);
-  border-radius: 50%;
-  color: var(--skills-red);
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+  flex: 0 0 34px;
+  fill: none;
+  stroke: var(--skills-red);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.5;
+}
+
+.skill-logo--flag {
+  height: 24px;
+  border: 1px solid rgba(195, 169, 173, 0.22);
+  border-radius: 2px;
+  stroke: none;
+}
+
+.skill-logo--arabic { stroke-width: 1.4; }
+
+.skill-panel--languages .skill-list {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .skill-panel-foot {
@@ -498,6 +519,15 @@ body.skills-page {
   .skills-hero-copy > p:last-child { margin-top: 13px; font-size: 15px; }
   .skills-illustration { justify-self: center; width: min(100%, 420px); }
   .skills-grid { grid-template-columns: 1fr; gap: 13px; padding: 16px 0; }
+  .skills-column { display: contents; }
+  .skill-panel--frontend { order: 1; }
+  .skill-panel--backend { order: 2; }
+  .skill-panel--ai { order: 3; }
+  .skill-panel--languages { order: 4; }
+  .skill-panel--qa { order: 5; }
+  .skill-panel--data { order: 6; }
+  .skill-panel--tools { order: 7; }
+  .skill-panel--soft { order: 8; }
   .skill-tags { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
@@ -515,7 +545,8 @@ body.skills-page {
   .skill-list { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 7px; }
   .skill-tags { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .skill-tile { min-height: 86px; font-size: 11px; }
-  .skill-tile img, .skill-mark { width: 30px; height: 30px; }
+  .skill-tile img, .skill-logo { width: 30px; height: 30px; }
+  .skill-logo--flag { height: 20px; }
   .skills-footer p { font-size: 9px; letter-spacing: 1px; }
 }
 
