@@ -1,82 +1,131 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0A090A">
+  <meta name="description" content="Contacter Hind Anadam pour échanger autour d'un projet, d'une collaboration ou d'une opportunité professionnelle.">
+  <title>Contact — Hind Anadam</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/masthead.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+<body class="skills-page contact-journal-page">
+  <a class="skills-skip-link" href="#main-content">Aller au contenu</a>
 
-<body>
+  <div class="masthead" aria-label="En-tête du journal numérique de Hind Anadam">
+    <div class="masthead-volume"><span>TOME 06</span><span class="masthead-divider" aria-hidden="true">|</span><span>2026</span></div>
+    <span class="masthead-star masthead-star--left" aria-hidden="true">✳</span>
+    <div class="masthead-brand"><span>HIND ANADAM</span><span class="masthead-divider" aria-hidden="true">|</span><span class="masthead-journal">JOURNAL NUMÉRIQUE</span></div>
+    <div class="masthead-location"><span>CONTACT</span></div>
+    <span class="masthead-star masthead-star--right" aria-hidden="true">✳</span>
+  </div>
 
-<header>
+  <header class="site-header skills-header">
+    <button class="nav-toggle" type="button" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="apropos.html">À propos</a>
+      <a href="competences.html">Compétences</a>
+      <a href="projets.html">Projets</a>
+      <a href="avis.html">Avis</a>
+      <a class="active" href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
 
+  <main id="main-content" class="contact-main">
+    <section class="contact-hero" aria-labelledby="contact-title">
+      <div class="contact-greeting">
+        <span class="contact-rail" aria-hidden="true"></span>
+        <div class="contact-hero-copy">
+          <h1 id="contact-title" class="contact-title" aria-label="HI THERE!">
+            <span class="contact-hello-word" aria-hidden="true"><span class="contact-letter">H</span><span class="contact-letter">I</span></span>
+            <span class="contact-there-word" aria-hidden="true"><span class="contact-letter">T</span><span class="contact-letter">H</span><span class="contact-letter">E</span><span class="contact-letter">R</span><span class="contact-letter">E</span><span class="contact-letter">!</span></span>
+          </h1>
+          <p class="contact-intro">RAVIE DE VOUS RENCONTRER</p>
+          <span class="contact-greeting-rule" aria-hidden="true"></span>
+          <p class="contact-lead">Une idée, une opportunité ou un projet à construire ensemble ? N’hésitez pas à me contacter.</p>
+        </div>
+      </div>
 
-<button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="site-nav">
-<span></span>
-<span></span>
-<span></span>
-</button>
+      <figure class="contact-wave-figure" aria-labelledby="contact-wave-title contact-wave-description">
+        <svg viewBox="0 0 400 300" role="img" aria-labelledby="contact-wave-title contact-wave-description">
+          <title id="contact-wave-title">Illustration d’une femme qui fait coucou</title>
+          <desc id="contact-wave-description">Dessin minimaliste d’une femme qui salue, avec une bulle hi !, une étoile et une courbe orbitale.</desc>
+          <g class="contact-orbit" fill="none" stroke="#A52A3A" stroke-width="1">
+            <path class="contact-orbit-draw" pathLength="1" d="M28 183C56 72 167 26 274 63c71 25 112 87 88 140-28 63-134 91-235 72C60 263 12 226 28 183Z"/>
+            <path class="contact-orbit-accent" d="M44 226c33 27 74 42 123 46"/>
+          </g>
+          <path class="contact-star" d="M329 35v23m-11.5-11.5h23m-19.6-8.1 16.2 16.2m0-16.2-16.2 16.2" fill="none" stroke="#A52A3A" stroke-width="1.2" stroke-linecap="round"/>
+          <g class="contact-wave-bubble" aria-hidden="true">
+            <path d="M51 46h58a9 9 0 0 1 9 9v17a9 9 0 0 1-9 9H91l-12 10 3-10H51a9 9 0 0 1-9-9V55a9 9 0 0 1 9-9Z" fill="#0A090A" stroke="#A52A3A" stroke-width="1.2"/>
+            <text x="80" y="68" fill="#F5F0EE" font-family="Cormorant Garamond, Georgia, serif" font-size="17" font-style="italic" text-anchor="middle">hi !</text>
+          </g>
+          <g class="contact-woman" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path class="contact-draw contact-draw--hair" pathLength="1" stroke="#F5F0EE" stroke-width="1.7" d="M151 174c-12-37-14-78 2-107 13-24 35-36 58-35 28 1 49 21 56 51 8 34 1 73-10 102M150 86c-19 35-22 92-12 142 3 16 10 30 21 42m107-171c18 39 14 93 2 132-5 16-13 28-25 39"/>
+            <path class="contact-draw contact-draw--hair-accent" pathLength="1" stroke="#A52A3A" stroke-width="1.2" d="M155 105c12-28 35-40 52-57m54 57c-6-22-18-38-34-48"/>
+            <path class="contact-draw contact-draw--face" pathLength="1" stroke="#F5F0EE" stroke-width="1.5" d="M166 96c0-26 17-43 42-43 24 0 41 18 40 44-1 29-15 51-40 55-25-4-41-27-42-56Z"/>
+            <path class="contact-draw contact-draw--features" pathLength="1" stroke="#F5F0EE" stroke-width="1.25" d="M183 101c5-4 10-4 15 0m18 0c5-4 10-4 15 0m-25 5-3 15c3 3 7 3 10 0m-17 13c7 5 16 5 23 0"/>
+            <path class="contact-draw contact-draw--neck" pathLength="1" stroke="#F5F0EE" stroke-width="1.5" d="m190 149-1 24m32-24 2 24"/>
+            <path class="contact-draw contact-draw--body" pathLength="1" stroke="#F5F0EE" stroke-width="1.7" d="M189 166c-21 5-38 16-48 35-10 20-13 43-15 68m96-103c21 7 37 21 46 42 7 18 10 39 12 61m-138-73c11 4 22 13 30 25m51-25c-9 4-17 11-23 20"/>
+            <path class="contact-draw contact-draw--detail" pathLength="1" stroke="#A52A3A" stroke-width="1.3" d="m189 168 17 19 15-19m-31 1-15 9m46-9 14 8"/>
+            <path class="contact-draw contact-draw--arm" pathLength="1" stroke="#F5F0EE" stroke-width="1.7" d="M237 178c12-11 22-25 32-44m27 22c-10 14-19 24-35 34-8 5-15 7-23 6"/>
+            <g class="contact-wave-hand">
+              <path class="contact-draw contact-draw--hand" pathLength="1" stroke="#F5F0EE" stroke-width="1.7" d="m269 137 1-39-1-25c0-7 9-8 11-1l4 27 2-39c1-8 11-8 12 0l1 39 4-31c1-8 11-7 11 1l-2 37 6-20c2-7 11-5 10 2l-4 30c-2 14-8 25-18 34l-8 10"/>
+              <path class="contact-draw contact-draw--hand-accent" pathLength="1" stroke="#A52A3A" stroke-width="1.2" d="m278 101 1-27m18 25 2-24m14 28 4-13"/>
+            </g>
+            <circle class="contact-earring" cx="164" cy="125" r="2.7" fill="#A52A3A" stroke="none"/>
+          </g>
+          <circle class="contact-orbit-node" cx="47" cy="197" r="3" fill="#0A090A" stroke="#A52A3A" stroke-width="1.2"/>
+        </svg>
+      </figure>
+    </section>
 
-<nav id="site-nav" class="site-nav">
+    <section class="contact-links" aria-label="Moyens de contact">
+      <a class="contact-card" href="https://github.com/hindanadam1" target="_blank" rel="noopener noreferrer">
+        <span class="contact-card-star" aria-hidden="true">✳</span>
+        <span class="contact-card-icon" aria-hidden="true"><i class="fa-brands fa-github"></i></span>
+        <h2 class="contact-card-name">GitHub</h2>
+        <p class="contact-card-description">Mes projets et mon code.</p>
+        <span class="contact-card-rule" aria-hidden="true"></span>
+        <span class="contact-card-action"><span>VOIR MON GITHUB</span><span class="contact-card-arrow" aria-hidden="true">→</span></span>
+      </a>
+      <a class="contact-card" href="https://www.linkedin.com/in/hind-anadam-dev/" target="_blank" rel="noopener noreferrer">
+        <span class="contact-card-star" aria-hidden="true">✳</span>
+        <span class="contact-card-icon" aria-hidden="true"><i class="fa-brands fa-linkedin-in"></i></span>
+        <h2 class="contact-card-name">LinkedIn</h2>
+        <p class="contact-card-description">Mon parcours et échanger.</p>
+        <span class="contact-card-rule" aria-hidden="true"></span>
+        <span class="contact-card-action"><span>VOIR MON LINKEDIN</span><span class="contact-card-arrow" aria-hidden="true">→</span></span>
+      </a>
+      <a class="contact-card" href="mailto:hindanadam1@gmail.com">
+        <span class="contact-card-star" aria-hidden="true">✳</span>
+        <span class="contact-card-icon" aria-hidden="true"><i class="fa-regular fa-envelope"></i></span>
+        <h2 class="contact-card-name">E-mail</h2>
+        <p class="contact-card-description">Une question ? Écrivez-moi.</p>
+        <span class="contact-card-rule" aria-hidden="true"></span>
+        <span class="contact-card-action"><span>ME CONTACTER</span><span class="contact-card-arrow" aria-hidden="true">→</span></span>
+      </a>
+      <a class="contact-card" href="tel:+33743295526">
+        <span class="contact-card-star" aria-hidden="true">✳</span>
+        <span class="contact-card-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></span>
+        <h2 class="contact-card-name">Téléphone</h2>
+        <p class="contact-card-description">Disponible pour échanger.</p>
+        <span class="contact-card-phone">+33 7 43 29 55 26</span>
+        <span class="contact-card-rule" aria-hidden="true"></span>
+        <span class="contact-card-action"><span>M'APPELER</span><span class="contact-card-arrow" aria-hidden="true">→</span></span>
+      </a>
+    </section>
 
-<a href="index.html">Home</a>
-<a href="apropos.html">About</a>
-<a href="competences.html">Skills</a>
-<a href="projets.html">Projects</a>
-<a class="active" href="contact.html">Contact</a>
+    <footer class="skills-footer contact-footer">
+      <p>TECHNOLOGIES <span>·</span> DÉVELOPPEMENT <span>·</span> INTELLIGENCE ARTIFICIELLE <span>·</span> AUTOMATISATION</p>
+    </footer>
+  </main>
 
-</nav>
-
-</header>
-
-
-<section class="contact-page">
-
-<h2>Contact Me</h2>
-
-<p class="contact-text">
-Feel free to contact me through my social networks or email.
-</p>
-
-
-<div class="social-links">
-
-<a href="https://github.com/" target="_blank">
-<i class="fab fa-github"></i>
-<span>GitHub</span>
-</a>
-
-
-<a href="https://linkedin.com/" target="_blank">
-<i class="fab fa-linkedin"></i>
-<span>LinkedIn</span>
-</a>
-
-
-<a href="mailto:hindanadam3@gmail.com">
-<i class="fas fa-envelope"></i>
-<span>Email</span>
-</a>
-
-
-<a href="#">
-<i class="fas fa-phone"></i>
-<span>+33 7 43 29 55 26</span>
-</a>
-
-</div>
-
-</section>
-
-<script src="script.js"></script>
-
+  <script src="js/script.js"></script>
 </body>
 </html>

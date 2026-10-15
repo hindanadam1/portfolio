@@ -1,109 +1,171 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Projects</title>
-
-<link rel="stylesheet" href="style.css">
-
+<meta name="theme-color" content="#0A090A">
+<meta name="description" content="Découvrez les projets de Hind Anadam en développement web, intelligence artificielle et automatisation.">
+<title>Projets — Hind Anadam</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/projects.css">
+<link rel="stylesheet" href="css/masthead.css">
 </head>
+<body class="projects-page">
+<a class="projects-skip-link" href="#main-content">Aller au contenu</a>
 
-<body>
+<div class="masthead" aria-label="En-tête du journal numérique de Hind Anadam">
+  <div class="masthead-volume"><span>TOME 04</span><span class="masthead-divider" aria-hidden="true">|</span><span>2026</span></div>
+  <span class="masthead-star masthead-star--left" aria-hidden="true">✳</span>
+  <div class="masthead-brand"><span>HIND ANADAM</span><span class="masthead-divider" aria-hidden="true">|</span><span class="masthead-journal">JOURNAL NUMÉRIQUE</span></div>
+  <div class="masthead-location"><span>PROJETS SÉLECTIONNÉS</span></div>
+  <span class="masthead-star masthead-star--right" aria-hidden="true">✳</span>
+</div>
 
-<header>
-
-
-<button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="site-nav">
-<span></span>
-<span></span>
-<span></span>
-</button>
-
-<nav id="site-nav" class="site-nav">
-
-<a href="index.html">Home</a>
-<a href="apropos.html">About</a>
-<a href="competences.html">Skills</a>
-<a class="active" href="projets.html">Projects</a>
-<a href="contact.html">Contact</a>
-
-</nav>
-
+<header class="site-header projects-header">
+  <button class="nav-toggle" type="button" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="site-nav">
+    <span></span><span></span><span></span>
+  </button>
+  <nav id="site-nav" class="site-nav" aria-label="Navigation principale">
+    <a href="index.html">Accueil</a>
+    <a href="apropos.html">À propos</a>
+    <a href="competences.html">Compétences</a>
+    <a class="active" href="projets.html" aria-current="page">Projets</a>
+      <a href="avis.html">Avis</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
+<main id="main-content" class="projects-main">
+  <section class="projects-hero" aria-labelledby="projects-title">
+    <div class="projects-hero-copy">
+      <p class="projects-eyebrow">PROJETS</p>
+      <h1 id="projects-title">Projets <em>en action</em></h1>
+      <p class="projects-description">Des idées transformées en expériences numériques.</p>
+    </div>
+    <figure class="projects-illustration" aria-labelledby="projects-globe-title projects-globe-description">
+      <svg viewBox="0 0 440 220" role="img" aria-labelledby="projects-globe-title projects-globe-description">
+        <title id="projects-globe-title">Globe numérique filaire</title>
+        <desc id="projects-globe-description">Un globe abstrait entouré d’orbites rouges sur une grille fine.</desc>
+        <defs>
+          <pattern id="projects-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+            <path d="M20 0H0V20" fill="none" stroke="#A52A3A" stroke-opacity=".15" stroke-width=".7"/>
+          </pattern>
+          <clipPath id="projects-globe-clip"><circle cx="270" cy="110" r="78"/></clipPath>
+        </defs>
+        <rect width="440" height="220" fill="url(#projects-grid)"/>
+        <g class="projects-globe-orbits" fill="none" stroke="#A52A3A" stroke-opacity=".55">
+          <ellipse cx="270" cy="110" rx="150" ry="42"/>
+          <ellipse cx="270" cy="110" rx="150" ry="42" transform="rotate(-26 270 110)"/>
+          <ellipse cx="270" cy="110" rx="150" ry="42" transform="rotate(26 270 110)"/>
+        </g>
+        <circle cx="270" cy="110" r="78" fill="#650F20" fill-opacity=".13" stroke="#A52A3A" stroke-opacity=".72"/>
+        <g clip-path="url(#projects-globe-clip)" fill="none" stroke="#A52A3A" stroke-opacity=".48" stroke-width=".8">
+          <ellipse cx="270" cy="110" rx="33" ry="78"/>
+          <ellipse cx="270" cy="110" rx="64" ry="78"/>
+          <ellipse cx="270" cy="110" rx="78" ry="28"/>
+          <ellipse cx="270" cy="110" rx="78" ry="54"/>
+          <path d="m195 78 29 13 20-23 27 21 27-15 26 19 23-9m-150 42 27-18 28 23 27-14 26 20 29-20 26 11m-128 31 32-16 21 16 31-17 26 17 26-20"/>
+        </g>
+        <g class="projects-globe-nodes" fill="#0A090A" stroke="#A52A3A" stroke-width="1.4">
+          <circle cx="224" cy="90" r="2.8"/><circle cx="244" cy="67" r="2.8"/><circle cx="271" cy="89" r="2.8"/>
+          <circle cx="297" cy="76" r="2.8"/><circle cx="323" cy="94" r="2.8"/><circle cx="246" cy="135" r="2.8"/>
+          <circle cx="273" cy="119" r="2.8"/><circle cx="300" cy="140" r="2.8"/><circle cx="329" cy="121" r="2.8"/>
+        </g>
+        <g fill="#C3A9AD" font-family="Inter, Arial, sans-serif" font-size="8" letter-spacing="1.8">
+          <text x="18" y="62">CODE</text><text x="18" y="77">CRÉER</text><text x="18" y="92">DÉVELOPPER</text>
+          <text x="18" y="107">INNOVER</text><text x="18" y="122">IMPACT</text>
+        </g>
+      </svg>
+    </figure>
+  </section>
 
-<section class="page">
+  <section class="projects-grid" aria-label="Projets sélectionnés">
+    <article class="project project-card" aria-labelledby="project-career-title">
+      <header class="project-card-heading"><p class="project-category">APPLICATION IA</p><span class="project-corner-arrow" aria-hidden="true">↗</span></header>
+      <div class="project-preview" role="img" aria-label="Aperçu à ajouter pour l’Assistant de carrière avec IA"><span class="preview-caption">APERÇU À AJOUTER</span><strong>APPLICATION<br>IA</strong><span class="preview-index">01</span></div>
+      <h2 id="project-career-title">Assistant de carrière avec IA</h2>
+      <p class="project-description">Application d'accompagnement professionnel avec une interface moderne et une expérience pensée pour aider chacun dans son parcours de carrière.</p>
+      <ul class="project-tags" aria-label="Technologies"><li>React</li><li>Node.js</li><li>Express</li></ul>
+      <a class="project-link" href="https://github.com/hindanadam1/ai-career-app" target="_blank" rel="noopener noreferrer">Voir le dépôt GitHub <span aria-hidden="true">↗</span></a>
+    </article>
 
-<h2>Projects</h2>
-<p class="projects-intro">Selection de projets realises en React, automatisation de test, WordPress et developpement web. Chaque projet met en avant une partie de mon parcours technique.</p>
+    <article class="project project-card" aria-labelledby="project-portfolio-title">
+      <header class="project-card-heading"><p class="project-category">PORTFOLIO</p><span class="project-corner-arrow" aria-hidden="true">↗</span></header>
+      <div class="project-preview" role="img" aria-label="Aperçu à ajouter pour le Portfolio personnel"><span class="preview-caption">APERÇU À AJOUTER</span><strong>PORTFOLIO<br>PERSONNEL</strong><span class="preview-index">02</span></div>
+      <h2 id="project-portfolio-title">Portfolio personnel</h2>
+      <p class="project-description">Site personnel présentant mon profil, mes compétences, mes projets et mes liens professionnels dans une interface adaptative.</p>
+      <ul class="project-tags" aria-label="Technologies"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+      <a class="project-link" href="https://github.com/hindanadam1/portfolio" target="_blank" rel="noopener noreferrer">Voir le dépôt GitHub <span aria-hidden="true">↗</span></a>
+    </article>
 
-<div class="projects">
+    <article class="project project-card" aria-labelledby="project-store-title">
+      <header class="project-card-heading"><p class="project-category">BOUTIQUE EN LIGNE</p><span class="project-corner-arrow" aria-hidden="true">↗</span></header>
+      <div class="project-preview" role="img" aria-label="Aperçu à ajouter pour la Boutique en ligne"><span class="preview-caption">APERÇU À AJOUTER</span><strong>BOUTIQUE<br>EN LIGNE</strong><span class="preview-index">03</span></div>
+      <h2 id="project-store-title">Boutique en ligne</h2>
+      <p class="project-description">Projet de commerce en ligne avec présentation de produits, navigation claire et structure de base pour une boutique en ligne.</p>
+      <ul class="project-tags" aria-label="Technologies"><li>Laravel</li><li>React</li><li>MySQL</li></ul>
+      <a class="project-link" href="https://github.com/hindanadam1/Projet_Store-" target="_blank" rel="noopener noreferrer">Voir le dépôt GitHub <span aria-hidden="true">↗</span></a>
+    </article>
 
-<div class="project">
-<h3>ai-career-app</h3>
-<p>Application orientee carriere avec interface moderne et experience utilisateur centree sur l'accompagnement professionnel.</p>
-<a class="project-link" href="https://github.com/hindanadam1/ai-career-app" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-</div>
+    <article class="project project-card" aria-labelledby="project-poo-title">
+      <header class="project-card-heading"><p class="project-category">PROGRAMMATION ORIENTÉE OBJET</p><span class="project-corner-arrow" aria-hidden="true">↗</span></header>
+      <div class="project-preview" role="img" aria-label="Aperçu à ajouter pour le projet de programmation orientée objet"><span class="preview-caption">APERÇU À AJOUTER</span><strong>OBJETS<br>&amp; LOGIQUE</strong><span class="preview-index">04</span></div>
+      <h2 id="project-poo-title">Programmation orientée objet</h2>
+      <p class="project-description">Projet organisé autour de classes, de logique métier et d'une structure de code claire.</p>
+      <a class="project-link" href="https://github.com/hindanadam1/projetpoo" target="_blank" rel="noopener noreferrer">Voir le dépôt GitHub <span aria-hidden="true">↗</span></a>
+    </article>
 
-<div class="project">
-<h3>portfolio</h3>
-<p>Portfolio personnel pour presenter mon profil, mes competences, mes projets et mes liens professionnels dans une interface responsive.</p>
-<a class="project-link" href="https://github.com/hindanadam1/portfolio" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-</div>
+    <article class="project project-card" aria-labelledby="project-streaming-title">
+      <header class="project-card-heading"><p class="project-category">DIFFUSION</p><span class="project-corner-arrow" aria-hidden="true">↗</span></header>
+      <div class="project-preview" role="img" aria-label="Aperçu à ajouter pour la plateforme de diffusion"><span class="preview-caption">APERÇU À AJOUTER</span><strong>PLATEFORME<br>DE DIFFUSION</strong><span class="preview-index">05</span></div>
+      <h2 id="project-streaming-title">Plateforme de diffusion</h2>
+      <p class="project-description">Interface web de diffusion en continu qui met en valeur les contenus, avec des sections dynamiques et une navigation fluide.</p>
+      <a class="project-link" href="https://github.com/hindanadam1/Streaming-" target="_blank" rel="noopener noreferrer">Voir le dépôt GitHub <span aria-hidden="true">↗</span></a>
+    </article>
 
-<div class="project">
-<h3>Projet_Store-</h3>
-<p>Projet e-commerce avec presentation de produits, parcours de navigation clair et base de travail pour une boutique en ligne.</p>
-<a class="project-link" href="https://github.com/hindanadam1/Projet_Store-" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-</div>
+    <article class="project project-card" aria-labelledby="project-game-title">
+      <header class="project-card-heading"><p class="project-category">JEU VIDÉO</p><span class="project-corner-arrow" aria-hidden="true">↗</span></header>
+      <div class="project-preview" role="img" aria-label="Aperçu à ajouter pour le jeu vidéo"><span class="preview-caption">APERÇU À AJOUTER</span><strong>JEU<br>VIDÉO</strong><span class="preview-index">06</span></div>
+      <h2 id="project-game-title">Jeu vidéo</h2>
+      <p class="project-description">Jeu conçu pour mettre en pratique la logique, les interactions avec l'utilisateur et l'organisation des fonctionnalités.</p>
+      <a class="project-link" href="https://github.com/hindanadam1/Projetgame" target="_blank" rel="noopener noreferrer">Voir le dépôt GitHub <span aria-hidden="true">↗</span></a>
+    </article>
 
-<div class="project">
-<h3>projetpoo</h3>
-<p>Projet de programmation orientee objet structure autour de classes, logique metier et organisation propre du code.</p>
-<a class="project-link" href="https://github.com/hindanadam1/projetpoo" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-</div>
+    <article class="project project-card" aria-labelledby="project-flashmind-title">
+      <header class="project-card-heading"><p class="project-category">PRODUCTIVITÉ</p><span class="project-corner-arrow" aria-hidden="true">↗</span></header>
+      <div class="project-preview" role="img" aria-label="Aperçu à ajouter pour l’application FlashMind"><span class="preview-caption">APERÇU À AJOUTER</span><strong>FLASH<br>MIND</strong><span class="preview-index">07</span></div>
+      <h2 id="project-flashmind-title">Application FlashMind</h2>
+      <p class="project-description">Application de productivité et de mémorisation proposant une expérience simple pour organiser et consulter des contenus.</p>
+      <a class="project-link" href="https://github.com/hindanadam1/flashmind" target="_blank" rel="noopener noreferrer">Voir le dépôt GitHub <span aria-hidden="true">↗</span></a>
+    </article>
 
-<div class="project">
-<h3>Streaming-</h3>
-<p>Interface web dediee au streaming avec mise en avant des contenus, sections dynamiques et navigation plus fluide.</p>
-<a class="project-link" href="https://github.com/hindanadam1/Streaming-" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-</div>
+    <article class="project project-card" aria-labelledby="project-automation-title">
+      <header class="project-card-heading"><p class="project-category">AUTOMATISATION</p><span class="project-corner-arrow" aria-hidden="true">↗</span></header>
+      <div class="project-preview" role="img" aria-label="Aperçu à ajouter pour le projet d’automatisation des tests"><span class="preview-caption">APERÇU À AJOUTER</span><strong>TESTS<br>AUTOMATISÉS</strong><span class="preview-index">08</span></div>
+      <h2 id="project-automation-title">Projet d'automatisation des tests</h2>
+      <p class="project-description">Automatisation de tests fonctionnels de bout en bout à l'aide de scénarios reproductibles, pour accélérer la validation et fiabiliser les mises en production.</p>
+    </article>
 
-<div class="project">
-<h3>Projetgame</h3>
-<p>Projet de jeu developpe pour travailler la logique, l'interaction utilisateur et la structuration des fonctionnalites.</p>
-<a class="project-link" href="https://github.com/hindanadam1/Projetgame" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-</div>
+    <article class="project project-card" aria-labelledby="project-wordpress-title">
+      <header class="project-card-heading"><p class="project-category">SITE WORDPRESS</p><span class="project-corner-arrow" aria-hidden="true">↗</span></header>
+      <div class="project-preview" role="img" aria-label="Aperçu à ajouter pour le site WordPress de l’institut ISTA"><span class="preview-caption">APERÇU À AJOUTER</span><strong>INSTITUT<br>ISTA</strong><span class="preview-index">09</span></div>
+      <h2 id="project-wordpress-title">Site WordPress pour un institut ISTA</h2>
+      <p class="project-description">Site WordPress conçu pour présenter les formations, les informations pratiques et les actualités d'un institut ISTA.</p>
+      <ul class="project-tags" aria-label="Technologie"><li>WordPress</li></ul>
+    </article>
 
-<div class="project">
-<h3>flashmind</h3>
-<p>Application orientee productivite et memorisation avec une experience simple pour organiser et consulter les contenus.</p>
-<a class="project-link" href="https://github.com/hindanadam1/flashmind" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-</div>
+    <article class="project project-card" aria-labelledby="project-textile-title">
+      <header class="project-card-heading"><p class="project-category">APPLICATION REACT</p><span class="project-corner-arrow" aria-hidden="true">↗</span></header>
+      <div class="project-preview" role="img" aria-label="Aperçu à ajouter pour le projet React textile"><span class="preview-caption">APERÇU À AJOUTER</span><strong>PROJET<br>TEXTILE</strong><span class="preview-index">10</span></div>
+      <h2 id="project-textile-title">Projet React textile</h2>
+      <p class="project-description">Application React dans le domaine du textile, avec un catalogue, des fiches produits et une interface adaptative.</p>
+      <ul class="project-tags" aria-label="Technologie"><li>React</li></ul>
+    </article>
+  </section>
 
-<div class="project">
-<h3>Projet d'automatisation de test</h3>
-<p>Automatisation des tests fonctionnels et E2E avec scenarios reproductibles pour accelerer la validation et fiabiliser les livraisons.</p>
-</div>
+  <footer class="projects-footer"><span aria-hidden="true">✳</span><p>PROJETS · DÉVELOPPEMENT · CRÉATIVITÉ · IMPACT</p></footer>
+</main>
 
-<div class="project">
-<h3>Site WordPress pour un institut ISTA</h3>
-<p>Site WordPress concu pour presenter les formations, les informations utiles et les actualites d'un institut ISTA.</p>
-</div>
-
-<div class="project">
-<h3>Projet React textile</h3>
-<p>Application React dans le domaine du textile avec catalogue, presentation des produits et interface responsive.</p>
-</div>
-
-</div>
-
-</section>
-
-<script src="script.js"></script>
-
+<script src="js/script.js"></script>
 </body>
 </html>

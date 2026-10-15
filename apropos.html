@@ -1,142 +1,159 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A propos - Hind Anadam</title>
-
-<link rel="stylesheet" href="style.css">
-
+<meta name="theme-color" content="#0A090A">
+<meta name="description" content="Le parcours professionnel et la formation de Hind Anadam, développeuse Full Stack passionnée par l’intelligence artificielle.">
+<title>À propos — Hind Anadam</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/masthead.css">
 </head>
+<body class="about-page">
+<a class="about-skip-link" href="#contenu">Aller au contenu</a>
 
-<body>
+<div class="masthead" aria-label="En-tête du journal numérique de Hind Anadam">
+<div class="masthead-volume"><span>TOME 02</span><span class="masthead-divider" aria-hidden="true">|</span><span>2026</span></div>
+<span class="masthead-star masthead-star--left" aria-hidden="true">✳</span>
+<div class="masthead-brand"><span>HIND ANADAM</span><span class="masthead-divider" aria-hidden="true">|</span><span class="masthead-journal">JOURNAL NUMÉRIQUE</span></div>
+<div class="masthead-location"><span>PARIS, FRANCE</span><span class="masthead-divider" aria-hidden="true">|</span><span>DÉVELOPPEUSE WEB</span></div>
+<span class="masthead-star masthead-star--right" aria-hidden="true">✳</span>
+</div>
 
-<header>
-
-<button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="site-nav">
-<span></span>
-<span></span>
-<span></span>
+<header class="site-header about-header">
+<button class="nav-toggle" type="button" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="site-nav">
+<span></span><span></span><span></span>
 </button>
-
-<nav id="site-nav" class="site-nav">
-
+<nav id="site-nav" class="site-nav" aria-label="Navigation principale">
 <a href="index.html">Accueil</a>
-<a class="active" href="apropos.html">A propos</a>
-<a href="competences.html">Competences</a>
+<a class="active" href="apropos.html" aria-current="page">À propos</a>
+<a href="competences.html">Compétences</a>
 <a href="projets.html">Projets</a>
+<a href="avis.html">Avis</a>
 <a href="contact.html">Contact</a>
-
 </nav>
-
 </header>
 
-
-<section class="about">
-<div class="about-hero-card">
-<div class="about-hero-text">
-<span class="about-badge">Profil</span>
-<h1>Developpeuse Full Stack & IA</h1>
-<p>
-Passionnee par le developpement web, l'automatisation et l'intelligence artificielle,
-je conçois des solutions modernes, fiables et orientées utilisateur.
-</p>
-<div class="about-tags">
-<span>Developpement Full Stack</span>
-<span>Tests QA & Playwright</span>
-<span>IA & automatisation</span>
-<span>React & WordPress</span>
-<span>API & Base de donnees</span>
-</div>
-</div>
-<div class="about-hero-summary">
-<div class="about-summary-card">
-<span class="about-summary-label">Recherche actuelle</span>
-<strong>Alternance</strong>
-</div>
-<div class="about-summary-grid">
-<div class="about-summary-item">
-<span>Focus</span>
-<strong>React, WordPress, IA et automatisation</strong>
-</div>
-<div class="about-summary-item">
-<span>Approche</span>
-<strong>Code propre, UI claire et tests fiables</strong>
-</div>
-<div class="about-summary-item">
-<span>Formation</span>
-<strong>IPSSI et ISTA</strong>
-</div>
-<div class="about-summary-item">
-<span>Objectif</span>
-<strong>Contribuer a des projets web concrets</strong>
-</div>
-</div>
-</div>
+<main id="contenu" class="about-shell">
+<section class="about-hero" aria-labelledby="about-title">
+<div class="about-hero-copy">
+<p class="about-eyebrow">À PROPOS</p>
+<h1 id="about-title">Au-delà <em>du code</em></h1>
+<p class="about-intro">Développeuse Full Stack passionnée par le développement web, l'intelligence artificielle et la création de solutions numériques utiles.</p>
 </div>
 
-<h2>A propos de moi</h2>
-<p class="about-lead">
-Je suis Hind Anadam, etudiante en 2eme Prepa Bachelor Informatique &
-Developpement a l'IPSSI, avec un parcours en developpement digital a l'ISTA.
-Je recherche une alternance afin de continuer a progresser sur des projets
-front-end, back-end, QA, DevOps et automatisation par l'intelligence artificielle.
-</p>
-
-<div class="about-layout">
-<article class="about-panel">
-<h3>Parcours professionnel</h3>
-<ul class="about-list about-career">
-<li>
-<strong>QA Automation & Intelligence Artificielle - Stage (DiliTrust)</strong><br>
-Depuis juin 2026 - Benchmark d'outils de tests bases sur l'IA, evaluation de solutions
-QA pour la LegalTech, generation automatique de cas de tests, integration d'outils IA
-dans des pipelines CI/CD Python, analyse de la couverture de tests, mesure des gains
-de productivite et de qualite, documentation technique, formation des utilisateurs et
-collaboration avec les equipes Developpement et DevOps.
-</li>
-<li>
-<strong>Assistante QA / Automatisation - Stage (ENGIE)</strong><br>
-Juin 2025 a septembre 2025 - Automatisation de tests fonctionnels avec Playwright
-(Python) sur des formulaires SharePoint, conception de scripts robustes bases sur les
-labels et selecteurs stables, analyse et suivi des anomalies, amelioration des processus
-de tests automatises et reduction des erreurs manuelles.
-</li>
-<li>
-<strong>Developpeuse Front-End | Projet de fin d'etudes (Yulia)</strong><br>
-Fevrier 2024 a juin 2024 - Developpement d'une interface front-end responsive,
-travail sur l'experience utilisateur et structuration des pages en React.js.
-</li>
-</ul>
-</article>
-
-<article class="about-panel">
-<h3>Formation</h3>
-<ul class="about-list about-diplomas">
-<li>
-<strong>Bachelor Developpement Full Stack & DevOps</strong><br>
-IPSSI Grande Ecole Informatique - Septembre 2026 a septembre 2027
-</li>
-<li>
-<strong>Prepa Bachelor Informatique, developpement</strong><br>
-IPSSI - Depuis septembre 2024. Parcours en cours en Bachelor Informatique a
-IPSSI Paris, actuellement en 2e annee avec entree en septembre 2025.
-</li>
-<li>
-<strong>Technicien Specialise en Developpement Digital</strong><br>
-ISTA - Septembre 2022 a juillet 2024. Formation en developpement web
-(HTML, CSS, JavaScript, React.js), gestion de projets numeriques et resolution de
-problemes, avec renforcement du sens de l'analyse et de la rigueur.
-</li>
-</ul>
-</article>
-</div>
-
+<figure class="about-hero-visual" aria-labelledby="about-globe-title about-globe-description">
+<svg class="about-network" viewBox="0 0 440 220" role="img" aria-labelledby="about-globe-title about-globe-description">
+<title id="about-globe-title">Globe filaire</title>
+<desc id="about-globe-description">Une représentation abstraite des technologies, tracée en rouge sur une grille fine.</desc>
+<defs>
+<pattern id="about-skills-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+<path d="M20 0H0V20" fill="none" stroke="#A52A3A" stroke-opacity=".15" stroke-width=".7"/>
+</pattern>
+<clipPath id="about-skills-globe-clip"><circle cx="252" cy="110" r="82"/></clipPath>
+</defs>
+<rect width="440" height="220" fill="url(#about-skills-grid)"/>
+<g class="skills-globe-orbits" fill="none" stroke="#A52A3A" stroke-opacity=".55">
+<ellipse cx="252" cy="110" rx="137" ry="48"/>
+<ellipse cx="252" cy="110" rx="137" ry="48" transform="rotate(-37 252 110)"/>
+<ellipse cx="252" cy="110" rx="137" ry="48" transform="rotate(37 252 110)"/>
+</g>
+<circle cx="252" cy="110" r="82" fill="#650F20" fill-opacity=".13" stroke="#A52A3A" stroke-opacity=".72"/>
+<g clip-path="url(#about-skills-globe-clip)" fill="none" stroke="#A52A3A" stroke-opacity=".48" stroke-width=".8">
+<ellipse cx="252" cy="110" rx="36" ry="82"/>
+<ellipse cx="252" cy="110" rx="68" ry="82"/>
+<ellipse cx="252" cy="110" rx="82" ry="30"/>
+<ellipse cx="252" cy="110" rx="82" ry="58"/>
+<path d="m174 75 31 15 20-26 29 25 28-18 27 21 25-7m-153 46 28-20 29 26 28-16 28 23 31-22 28 14m-133 31 33-18 22 17 33-18 27 19 28-23"/>
+</g>
+<g class="skills-globe-nodes" fill="#0A090A" stroke="#A52A3A" stroke-width="1.4">
+<circle cx="205" cy="90" r="3"/><circle cx="225" cy="64" r="3"/><circle cx="254" cy="89" r="3"/>
+<circle cx="282" cy="71" r="3"/><circle cx="309" cy="92" r="3"/><circle cx="232" cy="136" r="3"/>
+<circle cx="261" cy="120" r="3"/><circle cx="289" cy="143" r="3"/><circle cx="318" cy="121" r="3"/>
+</g>
+<g fill="#C3A9AD" font-family="Inter, Arial, sans-serif" font-size="8" letter-spacing="1.8">
+<text x="19" y="62">CODE</text><text x="19" y="76">APPRENDRE</text>
+<text x="347" y="79">DONNÉES</text><text x="347" y="94">INNOVATION</text>
+<text x="28" y="177">DÉVELOPPEMENT</text>
+</g>
+</svg>
+</figure>
 </section>
 
-<script src="script.js"></script>
+<section class="about-experience" id="experience" aria-labelledby="experience-title">
+<header class="about-section-heading">
+<h2 id="experience-title">EXPÉRIENCE PROFESSIONNELLE</h2>
+<p>DES PROJETS CONCRETS, UN IMPACT RÉEL</p>
+</header>
+<ol class="career-timeline" data-about-path aria-label="Parcours professionnel">
+<li class="career-entry" data-about-reveal>
+<div class="career-date"><time datetime="2026-06">Juin — sept.<br>2026</time></div>
+<span class="career-marker" aria-hidden="true"></span>
+<article class="career-content">
+<div class="career-content-heading"><div><h3>DiliTrust</h3><p>Stagiaire QA Automation &amp; IA</p></div><span class="career-index" aria-hidden="true">01</span></div>
+<p>Étude de faisabilité pour migrer des collections de tests de Postman vers Bruno, puis première migration et validation de requêtes API. Création de skills avec Claude, documentation technique et formation de l'équipe.</p>
+<ul class="about-tags" aria-label="Technologies et domaines"><li>Postman</li><li>Bruno CLI</li><li>Claude</li></ul>
+</article>
+</li>
+<li class="career-entry" data-about-reveal>
+<div class="career-date"><time datetime="2025-06">Juin</time> — <time datetime="2025-09">sept. 2025</time></div>
+<span class="career-marker" aria-hidden="true"></span>
+<article class="career-content">
+<div class="career-content-heading"><div><h3>ENGIE DSI HQ</h3><p>Stagiaire Développement Python, Automatisation &amp; IA</p></div><span class="career-index" aria-hidden="true">02</span></div>
+<p>Développement de scripts Python pour automatiser des processus métier, conception de tests Playwright et exploration de solutions d'intelligence artificielle.</p>
+<ul class="about-tags" aria-label="Technologies et domaines"><li>Python</li><li>Playwright</li><li>Automatisation</li></ul>
+</article>
+</li>
+<li class="career-entry" data-about-reveal>
+<div class="career-date"><time datetime="2024-02">Févr.</time> — <time datetime="2024-06">juin 2024</time></div>
+<span class="career-marker" aria-hidden="true"></span>
+<article class="career-content">
+<div class="career-content-heading"><div><h3>Yulia</h3><p>Développeuse Front-End — projet de fin d'études</p></div><span class="career-index" aria-hidden="true">03</span></div>
+<p>Conception de maquettes avec Figma et développement d'interfaces web responsives en React.js, en collaboration avec l'équipe back-end.</p>
+<ul class="about-tags" aria-label="Technologies et domaines"><li>Figma</li><li>React.js</li><li>Interfaces responsives</li></ul>
+</article>
+</li>
+</ol>
+</section>
 
+<section class="about-education" id="formation" aria-labelledby="education-title">
+<header class="about-section-heading">
+<h2 id="education-title">FORMATION</h2>
+<p>APPRENDRE AUJOURD'HUI, CONSTRUIRE DEMAIN</p>
+</header>
+<div class="education-path" data-about-path>
+<ol class="education-list">
+<li class="education-item" data-about-reveal>
+<span class="education-marker" aria-hidden="true"></span>
+<article class="education-content">
+<div class="education-meta"><span class="education-icon" aria-hidden="true">01</span><time datetime="2024-09">Depuis septembre 2024</time></div>
+<h3>IPSSI</h3>
+<p><strong>Bachelor Informatique — Développement Full Stack &amp; Intelligence Artificielle</strong><span>Développement d'applications web, programmation, bases de données et intégration de solutions d'IA.</span></p>
+<ul class="about-tags" aria-label="Domaines de formation"><li>Développement Full Stack</li><li>Intelligence artificielle</li></ul>
+</article>
+</li>
+<li class="education-item" data-about-reveal>
+<span class="education-marker" aria-hidden="true"></span>
+<article class="education-content">
+<div class="education-meta"><span class="education-icon" aria-hidden="true">02</span><span><time datetime="2022-09">Septembre 2022</time> — <time datetime="2024-07">juillet 2024</time></span></div>
+<h3>Institut Spécialisé de Technologie Appliquée</h3>
+<p><strong>Technicien Spécialisé en Développement Full Stack</strong><span>Développement web, gestion de projets numériques et résolution de problèmes.</span></p>
+<ul class="about-tags" aria-label="Domaines de formation"><li>HTML, CSS, JavaScript</li><li>React.js</li></ul>
+</article>
+</li>
+</ol>
+</div>
+</section>
+
+<footer class="about-ending" aria-label="Mot de clôture">
+<p class="about-eyebrow">POUR LA SUITE</p>
+<p class="about-ending-line">Always learning.<br><em>Always building.</em></p>
+<span class="about-ending-orbit" aria-hidden="true"></span>
+</footer>
+</main>
+
+<script src="js/script.js"></script>
+<script src="js/about.js"></script>
 </body>
 </html>

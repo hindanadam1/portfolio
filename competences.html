@@ -1,99 +1,168 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Skills</title>
-
-<link rel="stylesheet" href="style.css">
-
+<meta name="theme-color" content="#0A090A">
+<meta name="description" content="Les compétences techniques de Hind Anadam en développement web, backend, bases de données, automatisation et intelligence artificielle.">
+<title>Compétences — Hind Anadam</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/skills.css">
+<link rel="stylesheet" href="css/masthead.css">
 </head>
+<body class="skills-page">
+<a class="skills-skip-link" href="#main-content">Aller au contenu</a>
 
-<body>
+<div class="masthead" aria-label="En-tête du journal numérique de Hind Anadam">
+<div class="masthead-volume"><span>TOME 03</span><span class="masthead-divider" aria-hidden="true">|</span><span>2026</span></div>
+<span class="masthead-star masthead-star--left" aria-hidden="true">✳</span>
+<div class="masthead-brand"><span>HIND ANADAM</span><span class="masthead-divider" aria-hidden="true">|</span><span class="masthead-journal">JOURNAL NUMÉRIQUE</span></div>
+<div class="masthead-location"><span>TECH STACK</span></div>
+<span class="masthead-star masthead-star--right" aria-hidden="true">✳</span>
+</div>
 
-<header>
-
-
-<button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="site-nav">
-<span></span>
-<span></span>
-<span></span>
+<header class="site-header skills-header">
+<button class="nav-toggle" type="button" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="site-nav">
+<span></span><span></span><span></span>
 </button>
-
-<nav id="site-nav" class="site-nav">
-
-<a href="index.html">Home</a>
-<a href="apropos.html">About</a>
-<a class="active" href="competences.html">Skills</a>
-<a href="projets.html">Projects</a>
+<nav id="site-nav" class="site-nav" aria-label="Navigation principale">
+<a href="index.html">Accueil</a>
+<a href="apropos.html">À propos</a>
+<a class="active" href="competences.html" aria-current="page">Compétences</a>
+<a href="projets.html">Projets</a>
+<a href="avis.html">Avis</a>
 <a href="contact.html">Contact</a>
-
 </nav>
-
 </header>
 
-
-<section class="skills">
-
-<h2>Mes Competences</h2>
-
-<div class="skills-group">
-<h3>Developpement Full Stack</h3>
-<div class="skills-container">
-<div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="API"><p>Developpement d'API</p></div>
-<div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"><p>Initiation React.js</p></div>
-<div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"><p>POO avec Java/PHP</p></div>
-<div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/playwright/playwright-original.svg" alt="Tests"><p>Tests unitaires</p></div>
-<div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="Big Data"><p>Introduction Big Data</p></div>
-<div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="IA"><p>IA & automatisation</p></div>
-<div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="Web"><p>Projet Web</p></div>
-<div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="BDD"><p>Base de donnees relationnelle</p></div>
+<main id="main-content" class="skills-main">
+<section class="skills-hero" aria-labelledby="skills-title">
+<div class="skills-hero-copy">
+<p class="skills-eyebrow">COMPÉTENCES</p>
+<h1 id="skills-title">Mon <em>Tech Stack</em></h1>
+<p>Les technologies avec lesquelles je conçois, développe et construis des solutions digitales.</p>
 </div>
-</div>
-
-<div class="skills-group">
-<h3>Systemes, Reseaux et Cloud</h3>
-<div class="skills-container">
-<div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cisco/cisco-original.svg" alt="Cisco"><p>Architecture reseaux (Cisco)</p></div>
-<div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Virtualisation"><p>Virtualisation & clusters</p></div>
-<div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="Windows Server"><p>Administration Windows Server</p></div>
-<div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"><p>Administration Linux Server</p></div>
-<div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash"><p>Bash & automatisation</p></div>
-<div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Systemes repartis"><p>Systemes repartis</p></div>
-<div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS"><p>Introduction Cloud AWS</p></div>
-</div>
-</div>
-
-<div class="skills-group">
-<h3>VR, AR et Unity</h3>
-<div class="skills-container">
-<div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity"><p>VR / AR avec Unity</p></div>
-<div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="Projet VR"><p>Projet VR</p></div>
-</div>
-</div>
-
-<div class="skills-group">
-<h3>Cybersecurite et Secure Coding</h3>
-<div class="skills-container">
-<div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Pentest"><p>Hacking & pentest (initiation)</p></div>
-<div class="skill"><img src="https://cdn.simpleicons.org/owasp/FFFFFF" alt="OWASP"><p>Secure coding & OWASP</p></div>
-</div>
-</div>
-
-<div class="skills-group">
-<h3>Soft Skills et Communication Pro</h3>
-<div class="skills-container">
-<div class="skill"><img src="https://cdn.simpleicons.org/googletranslate/FFFFFF" alt="Langues"><p>Francais, Anglais</p></div>
-<div class="skill"><img src="https://cdn.simpleicons.org/teamviewer/FFFFFF" alt="Travail en equipe"><p>Travail en equipe</p></div>
-<div class="skill"><img src="https://cdn.simpleicons.org/bookstack/FFFFFF" alt="Rapport"><p>Redaction & soutenance</p></div>
-</div>
-</div>
-
+<figure class="skills-illustration" aria-labelledby="skills-globe-title skills-globe-description">
+<svg viewBox="0 0 440 220" role="img" aria-labelledby="skills-globe-title skills-globe-description">
+<title id="skills-globe-title">Globe filaire</title>
+<desc id="skills-globe-description">Une représentation abstraite des technologies, tracée en rouge sur une grille fine.</desc>
+<defs>
+<pattern id="skills-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+<path d="M20 0H0V20" fill="none" stroke="#A52A3A" stroke-opacity=".15" stroke-width=".7"/>
+</pattern>
+<clipPath id="skills-globe-clip"><circle cx="252" cy="110" r="82"/></clipPath>
+</defs>
+<rect width="440" height="220" fill="url(#skills-grid)"/>
+<g class="skills-globe-orbits" fill="none" stroke="#A52A3A" stroke-opacity=".55">
+<ellipse cx="252" cy="110" rx="137" ry="48"/>
+<ellipse cx="252" cy="110" rx="137" ry="48" transform="rotate(-37 252 110)"/>
+<ellipse cx="252" cy="110" rx="137" ry="48" transform="rotate(37 252 110)"/>
+</g>
+<circle cx="252" cy="110" r="82" fill="#650F20" fill-opacity=".13" stroke="#A52A3A" stroke-opacity=".72"/>
+<g clip-path="url(#skills-globe-clip)" fill="none" stroke="#A52A3A" stroke-opacity=".48" stroke-width=".8">
+<ellipse cx="252" cy="110" rx="36" ry="82"/>
+<ellipse cx="252" cy="110" rx="68" ry="82"/>
+<ellipse cx="252" cy="110" rx="82" ry="30"/>
+<ellipse cx="252" cy="110" rx="82" ry="58"/>
+<path d="m174 75 31 15 20-26 29 25 28-18 27 21 25-7m-153 46 28-20 29 26 28-16 28 23 31-22 28 14m-133 31 33-18 22 17 33-18 27 19 28-23"/>
+</g>
+<g class="skills-globe-nodes" fill="#0A090A" stroke="#A52A3A" stroke-width="1.4">
+<circle cx="205" cy="90" r="3"/><circle cx="225" cy="64" r="3"/><circle cx="254" cy="89" r="3"/>
+<circle cx="282" cy="71" r="3"/><circle cx="309" cy="92" r="3"/><circle cx="232" cy="136" r="3"/>
+<circle cx="261" cy="120" r="3"/><circle cx="289" cy="143" r="3"/><circle cx="318" cy="121" r="3"/>
+</g>
+<g class="skills-globe-labels" fill="#C3A9AD" font-family="Inter, Arial, sans-serif" font-size="8" letter-spacing="1.8">
+<text x="19" y="62">CODE</text><text x="19" y="76">APPRENDRE</text>
+<text x="347" y="79">DONNÉES</text><text x="347" y="94">INNOVATION</text>
+<text x="28" y="177">DÉVELOPPEMENT</text>
+</g>
+</svg>
+</figure>
 </section>
 
-<script src="script.js"></script>
+<section class="skills-grid" aria-label="Catégories de compétences">
+<article class="skill-panel" aria-labelledby="skill-web-title">
+<header class="skill-panel-heading">
+<h2 id="skill-web-title">Développement web</h2>
+<svg class="category-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 6-6 6 6 6M16 6l6 6-6 6M14 3l-4 18"/></svg>
+</header>
+<ul class="skill-list">
+<li class="skill-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" loading="lazy"><span>HTML5</span></li>
+<li class="skill-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" loading="lazy"><span>CSS3</span></li>
+<li class="skill-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" loading="lazy"><span>JavaScript</span></li>
+<li class="skill-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" loading="lazy"><span>React.js</span></li>
+<li class="skill-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="" loading="lazy"><span>Tailwind CSS</span></li>
+</ul>
+<p class="skill-panel-foot"><span>FRONT-END</span></p>
+</article>
 
+<article class="skill-panel" aria-labelledby="skill-backend-title">
+<header class="skill-panel-heading">
+<h2 id="skill-backend-title">Backend &amp; API</h2>
+<svg class="category-icon" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="8.5" ry="3"/><path d="M3.5 5v6c0 1.7 3.8 3 8.5 3s8.5-1.3 8.5-3V5M3.5 11v6c0 1.7 3.8 3 8.5 3s8.5-1.3 8.5-3v-6"/></svg>
+</header>
+<ul class="skill-list">
+<li class="skill-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="" loading="lazy"><span>PHP</span></li>
+<li class="skill-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="" loading="lazy"><span>Node.js</span></li>
+<li class="skill-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="" loading="lazy"><span>Express.js</span></li>
+<li class="skill-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" loading="lazy"><span>Python</span></li>
+<li class="skill-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="" loading="lazy"><span>Laravel</span></li>
+<li class="skill-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="" loading="lazy"><span>FastAPI</span></li>
+<li class="skill-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="" loading="lazy"><span>Java</span></li>
+<li class="skill-tile skill-tile--mark"><span class="skill-mark" aria-hidden="true">API</span><span>REST API · JWT</span></li>
+</ul>
+<p class="skill-panel-foot"><span>BACK-END</span></p>
+</article>
+
+<article class="skill-panel" aria-labelledby="skill-data-title">
+<header class="skill-panel-heading">
+<h2 id="skill-data-title">Base de données</h2>
+<svg class="category-icon" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="8.5" ry="3"/><path d="M3.5 5v6c0 1.7 3.8 3 8.5 3s8.5-1.3 8.5-3V5M3.5 11v6c0 1.7 3.8 3 8.5 3s8.5-1.3 8.5-3v-6"/></svg>
+</header>
+<ul class="skill-list">
+<li class="skill-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="" loading="lazy"><span>MySQL</span></li>
+<li class="skill-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="" loading="lazy"><span>SQLite</span></li>
+<li class="skill-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="" loading="lazy"><span>MongoDB</span></li>
+</ul>
+<p class="skill-panel-foot"><span>DONNÉES</span></p>
+</article>
+
+<article class="skill-panel" aria-labelledby="skill-tools-title">
+<header class="skill-panel-heading">
+<h2 id="skill-tools-title">Outils &amp; autres</h2>
+<svg class="category-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 2.1 6.1L20 5l-3.1 5.9L23 13l-6.1 2.1L20 21l-5.9-3.1L12 24l-2.1-6.1L4 21l3.1-5.9L1 13l6.1-2.1L4 5l5.9 3.1z" transform="translate(1 -1) scale(.92)"/></svg>
+</header>
+<ul class="skill-list">
+<li class="skill-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="" loading="lazy"><span>Git</span></li>
+<li class="skill-tile"><img src="https://cdn.simpleicons.org/github/F5F0EE" alt="" loading="lazy"><span>GitHub</span></li>
+<li class="skill-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="" loading="lazy"><span>Docker</span></li>
+<li class="skill-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/playwright/playwright-original.svg" alt="" loading="lazy"><span>Playwright</span></li>
+<li class="skill-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="" loading="lazy"><span>Linux</span></li>
+<li class="skill-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="" loading="lazy"><span>Postman</span></li>
+<li class="skill-tile skill-tile--mark"><span class="skill-mark" aria-hidden="true">B</span><span>Bruno</span></li>
+<li class="skill-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="" loading="lazy"><span>AWS</span></li>
+<li class="skill-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="" loading="lazy"><span>TensorFlow</span></li>
+<li class="skill-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cisco/cisco-original.svg" alt="" loading="lazy"><span>Cisco</span></li>
+<li class="skill-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="" loading="lazy"><span>Unity</span></li>
+<li class="skill-tile skill-tile--mark"><span class="skill-mark" aria-hidden="true">IA</span><span>API OpenAI</span></li>
+</ul>
+<ul class="skill-tags" aria-label="Autres compétences confirmées">
+<li>Bash · Windows Server · Kubernetes · clusters · virtualisation</li>
+<li>Intégration continue · CI/CD · architecture réseaux</li>
+<li>Apache · Big Data · VR / AR · C# · OWASP · pentest (initiation)</li>
+<li>IA générative · ingénierie de prompt · méthodes agiles · Scrum</li>
+<li>Documentation · rédaction · soutenance · travail en équipe · communication</li>
+<li>Français · anglais · arabe</li>
+</ul>
+<p class="skill-panel-foot"><span>OUTILS &amp; SYSTÈMES</span></p>
+</article>
+</section>
+
+<footer class="skills-footer">
+<p>TECHNOLOGIES <span>·</span> DÉVELOPPEMENT <span>·</span> INTELLIGENCE ARTIFICIELLE <span>·</span> AUTOMATISATION</p>
+</footer>
+</main>
+
+<script src="js/script.js"></script>
 </body>
 </html>

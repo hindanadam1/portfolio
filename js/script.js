@@ -1,22 +1,3 @@
-const text = "Full Stack";
-
-let i = 0;
-const typingTarget = document.querySelector(".typing");
-
-function typing(){
-if(!typingTarget){
-return;
-}
-
-if(i < text.length){
-typingTarget.innerHTML += text.charAt(i);
-i++;
-setTimeout(typing, 70);
-}
-}
-
-typing();
-
 const navToggle = document.querySelector(".nav-toggle");
 const siteNav = document.querySelector(".site-nav");
 
@@ -25,6 +6,7 @@ navToggle.addEventListener("click", () => {
 const open = siteNav.classList.toggle("is-open");
 navToggle.classList.toggle("is-open", open);
 navToggle.setAttribute("aria-expanded", String(open));
+navToggle.setAttribute("aria-label", open ? "Fermer le menu de navigation" : "Ouvrir le menu de navigation");
 });
 
 siteNav.querySelectorAll("a").forEach((link) => {
@@ -40,6 +22,7 @@ if(window.innerWidth > 768){
 siteNav.classList.remove("is-open");
 navToggle.classList.remove("is-open");
 navToggle.setAttribute("aria-expanded", "false");
+navToggle.setAttribute("aria-label", "Ouvrir le menu de navigation");
 }
 });
 }
@@ -77,13 +60,10 @@ rootMargin: "0px 0px -40px 0px"
 
 revealItems.forEach((item) => observer.observe(item));
 
-const hero = document.querySelector(".hero");
-if(hero){
-hero.addEventListener("pointermove", (event) => {
-const rect = hero.getBoundingClientRect();
-const x = ((event.clientX - rect.left) / rect.width) * 100;
-const y = ((event.clientY - rect.top) / rect.height) * 100;
-hero.style.setProperty("--mx", `${x}%`);
-hero.style.setProperty("--my", `${y}%`);
+const homePage = document.querySelector(".home-page");
+if(homePage && !window.matchMedia("(prefers-reduced-motion: reduce)").matches){
+document.addEventListener("pointermove", (event) => {
+homePage.style.setProperty("--cursor-x", `${event.clientX}px`);
+homePage.style.setProperty("--cursor-y", `${event.clientY}px`);
 });
 }

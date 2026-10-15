@@ -1,0 +1,171 @@
+/* Shared journal masthead used across every portfolio page. */
+:root {
+  --masthead-ink: #F5F0EE;
+  --masthead-muted: #C3A9AD;
+  --masthead-red: #A52A3A;
+  --masthead-line: rgba(165, 42, 58, .42);
+}
+
+body[class] .masthead {
+  position: relative;
+  z-index: 21;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 18px;
+  width: min(calc(100% - 40px), 1880px);
+  min-height: 70px;
+  margin: 15px auto 0;
+  padding: 12px clamp(20px, 3vw, 54px);
+  border: 0;
+  border-block: 1px solid var(--masthead-line);
+  background: transparent;
+  color: var(--masthead-muted);
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  font-size: clamp(10px, .85vw, 15px);
+  letter-spacing: .18em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  animation: masthead-enter 620ms ease both;
+}
+
+body[class] .masthead-volume,
+body[class] .masthead-brand,
+body[class] .masthead-location {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+  white-space: nowrap;
+}
+
+body[class] .masthead-volume {
+  justify-self: start;
+  padding-left: 0;
+}
+
+body[class] .masthead-brand {
+  justify-self: center;
+  justify-content: center;
+  gap: 18px;
+  color: var(--masthead-red);
+  font-size: clamp(16px, 1.4vw, 27px);
+  letter-spacing: .23em;
+}
+
+body[class] .masthead-brand > span:first-child { color: var(--masthead-red); }
+
+body[class] .masthead-journal {
+  color: var(--masthead-ink);
+  font-size: .84em;
+}
+
+body[class] .masthead-location {
+  justify-self: end;
+  justify-content: flex-end;
+  padding-right: 0;
+  color: var(--masthead-muted);
+  font-size: .9em;
+}
+
+body[class] .masthead-divider { color: rgba(245, 240, 238, .48); }
+
+body[class] .masthead-star {
+  position: absolute;
+  top: 50%;
+  display: block;
+  color: var(--masthead-red);
+  font-family: var(--font-title, Georgia, serif);
+  font-size: 1.5rem;
+  line-height: 1;
+  transform: translateY(-50%);
+}
+
+body[class] .masthead-star--left { left: 16%; }
+body[class] .masthead-star--right { right: 1.2%; }
+
+@keyframes masthead-enter {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 980px) {
+  body[class] .masthead {
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    gap: 10px;
+    font-size: 11px;
+  }
+
+  body[class] .masthead-brand { gap: 11px; font-size: 15px; letter-spacing: .14em; }
+  body[class] .masthead-volume,
+  body[class] .masthead-location { gap: 8px; }
+}
+
+@media (max-width: 820px) {
+  body[class] .masthead {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    row-gap: 5px;
+    min-height: 78px;
+    padding: 9px 16px;
+  }
+
+  body[class] .masthead-volume {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+    padding-left: 25px;
+  }
+
+  body[class] .masthead-location {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    padding-right: 25px;
+  }
+
+  body[class] .masthead-brand {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-self: center;
+    font-size: 13px;
+  }
+
+  body[class] .masthead-star { font-size: 23px; }
+  body[class] .masthead-star--left { left: 8px; }
+  body[class] .masthead-star--right { right: 8px; }
+}
+
+@media (max-width: 709px) {
+  body[class] .masthead-location > span:last-child,
+  body[class] .masthead-location > .masthead-divider { display: none; }
+}
+
+@media (max-width: 560px) {
+  body[class] .masthead {
+    width: calc(100% - 24px);
+    min-height: 72px;
+    padding: 8px 10px;
+    font-size: 9px;
+    letter-spacing: .12em;
+  }
+
+  body[class] .masthead-volume,
+  body[class] .masthead-location { gap: 6px; }
+
+  body[class] .masthead-volume { padding-left: 22px; }
+  body[class] .masthead-location { padding-right: 22px; }
+
+  body[class] .masthead-brand {
+    gap: 8px;
+    font-size: clamp(8px, 2.6vw, 11px);
+    letter-spacing: .1em;
+  }
+
+  body[class] .masthead-journal { letter-spacing: .08em; }
+  body[class] .masthead-location > span:not(:first-child) { display: none; }
+  body[class] .masthead-star { font-size: 20px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body[class] .masthead { animation: none; }
+}

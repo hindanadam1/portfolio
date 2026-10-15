@@ -4,67 +4,106 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio Hind</title>
+<meta name="theme-color" content="#0A090A">
+<meta name="description" content="Hind Anadam, développeuse web polyvalente : je conçois des expériences numériques à la croisée du code, de l'intelligence artificielle et de la créativité.">
+<title>Hind Anadam — Développeuse web</title>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/masthead.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
 
-<body>
+<body class="home-page">
 
-<header>
+<a class="skip-link" href="#main-content">Aller au contenu</a>
 
-<button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="site-nav">
+<div class="masthead" aria-label="En-tête du journal numérique de Hind Anadam">
+<div class="masthead-volume"><span>TOME 01</span><span class="masthead-divider">|</span><span>2026</span></div>
+<span class="masthead-star masthead-star--left" aria-hidden="true">✳</span>
+<div class="masthead-brand"><span>HIND ANADAM</span><span class="masthead-divider">|</span><span class="masthead-journal">JOURNAL NUMÉRIQUE</span></div>
+<div class="masthead-location"><span>PARIS, FRANCE</span><span class="masthead-divider">|</span><span>DÉVELOPPEUSE WEB</span></div>
+<span class="masthead-star masthead-star--right" aria-hidden="true">✳</span>
+</div>
+
+<header class="site-header">
+<button class="nav-toggle" type="button" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="site-nav">
 <span></span>
 <span></span>
 <span></span>
 </button>
 
-<nav id="site-nav" class="site-nav">
-
-<a class="active" href="index.html">Home</a>
-<a href="apropos.html">About</a>
-<a href="competences.html">Skills</a>
-<a href="projets.html">Projects</a>
+<nav id="site-nav" class="site-nav" aria-label="Navigation principale">
+<a class="active" href="index.html" aria-current="page">Accueil</a>
+<a href="apropos.html">À propos</a>
+<a href="competences.html">Compétences</a>
+<a href="projets.html">Projets</a>
+<a href="avis.html">Avis</a>
 <a href="contact.html">Contact</a>
-
 </nav>
-
 </header>
 
-<section class="hero">
-<div class="hero-glow"></div>
-
-<div class="left">
-<img src="images/Moi.jpeg">
+<main class="hero" id="main-content">
+<figure class="portrait-panel" aria-label="Portrait professionnel et illustration technologique">
+<svg class="portrait-tech" viewBox="0 0 440 340" aria-hidden="true" focusable="false">
+<defs>
+<pattern id="home-portrait-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+<path d="M20 0H0V20" fill="none" stroke="#A52A3A" stroke-opacity=".16" stroke-width=".7" />
+</pattern>
+<clipPath id="home-portrait-globe-clip"><circle cx="228" cy="171" r="96" /></clipPath>
+</defs>
+<rect width="440" height="340" fill="url(#home-portrait-grid)" />
+<g class="portrait-tech-orbits" fill="none" stroke="#A52A3A" stroke-opacity=".54" stroke-width="1">
+<ellipse cx="228" cy="171" rx="162" ry="57" />
+<ellipse cx="228" cy="171" rx="162" ry="57" transform="rotate(-36 228 171)" />
+<ellipse cx="228" cy="171" rx="162" ry="57" transform="rotate(36 228 171)" />
+</g>
+<circle cx="228" cy="171" r="96" fill="#650F20" fill-opacity=".12" stroke="#A52A3A" stroke-opacity=".68" />
+<g clip-path="url(#home-portrait-globe-clip)" fill="none" stroke="#A52A3A" stroke-opacity=".48" stroke-width=".8">
+<ellipse cx="228" cy="171" rx="39" ry="96" />
+<ellipse cx="228" cy="171" rx="72" ry="96" />
+<ellipse cx="228" cy="171" rx="96" ry="34" />
+<ellipse cx="228" cy="171" rx="96" ry="68" />
+<path d="m139 132 34 17 24-28 31 28 29-20 28 23 34-12m-176 47 34-26 27 28 35-22 28 27 34-21 29 14m-156 39 31-20 32 18 28-20 34 19 30-23" />
+</g>
+<g class="portrait-tech-nodes" fill="#0A090A" stroke="#A52A3A" stroke-width="1.5">
+<circle cx="174" cy="149" r="3.5" />
+<circle cx="197" cy="121" r="3.5" />
+<circle cx="228" cy="148" r="4" />
+<circle cx="260" cy="128" r="3.5" />
+<circle cx="289" cy="151" r="3.5" />
+<circle cx="190" cy="196" r="3.5" />
+<circle cx="230" cy="205" r="4" />
+<circle cx="270" cy="196" r="3.5" />
+</g>
+</svg>
+<div class="portrait-frame">
+<img src="assets/images/hind-anadam-portrait.png" alt="Portrait professionnel" width="792" height="1188" fetchpriority="high">
 </div>
+<figcaption class="portrait-caption">
+<span class="portrait-caption-kicker">LA DÉVELOPPEUSE</span>
+<span class="portrait-caption-title">DERRIÈRE L'ÉCRAN</span>
+</figcaption>
+</figure>
 
-<div class="right">
-<h1>Hind Anadam</h1>
-<div class="line"></div>
-<p class="typing"></p>
-
-<div class="hero-social">
-<a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-<i class="fab fa-instagram"></i>
-</a>
-<a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-<i class="fab fa-facebook-f"></i>
-</a>
-<a href="https://tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-<i class="fab fa-tiktok"></i>
-</a>
-</div>
-
+<section class="hero-copy" aria-labelledby="hero-title">
+<div class="hero-copy-main">
+<p class="hero-eyebrow">CODE <span aria-hidden="true">·</span> INTELLIGENCE ARTIFICIELLE <span aria-hidden="true">·</span> CRÉATIVITÉ</p>
+<h1 id="hero-title"><span>Hind</span> <em class="name-accent">Anadam</em><span class="hero-period">.</span></h1>
+<div class="hero-rule" aria-hidden="true"></div>
+<p class="typing">Je conçois des expériences numériques à la croisée du code, de l'intelligence artificielle et de la créativité.</p>
 <div class="buttons">
-<a class="etude-cas-btn" href="projets.html">Explore</a>
+<a class="etude-cas-btn" href="projets.html">Découvrir mes projets <span aria-hidden="true">→</span></a>
 </div>
-
 </div>
+<aside class="hero-marker" aria-label="Idées, projets, collaboration">
+<span>IDÉES</span>
+<span>PROJETS</span>
+<span>COLLABORATION</span>
+</aside>
 </section>
+</main>
 
-<script src="script.js"></script>
-
+<script src="js/script.js"></script>
 </body>
 </html>
